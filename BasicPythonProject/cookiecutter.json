@@ -1,8 +1,7 @@
 {
     "project_name": "My Project",
-    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "repo_name": "my_project",
     "description": "Basic Python Project",
-    "directory_name": "my_dir",
     "version": "0.1.0",
     "author_name": "Ryan Butler",
     "author_email": "ryanleonbutler@gmail.com",

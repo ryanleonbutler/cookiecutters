@@ -5,8 +5,8 @@ description = "{{ cookiecutter.description }}"
 authors = ["{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>"]
 readme = "README.md"
 license = "{{ cookiecutter.license }}"
-homepage = "https://github.com/{{ cookiecutter.github_username }}/project_slug"
-repository = "https://github.com/{{ cookiecutter.github_username }}/project_slug"
+homepage = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}"
+repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}"
 
 [tool.poetry.dependencies]
 python = "^{{ cookiecutter.python_version }}"
@@ -43,7 +43,7 @@ commands_pre = poetry install -vvv
 
 [testenv:flake8]
 commands =
-    poetry run flake8 src/{{ project_slug }} tests/
+    poetry run flake8 src/{{ cookiecutter.repo_name }} tests/
 
 [testenv:tests]
 commands =
